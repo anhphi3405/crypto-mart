@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    height: 100vh;
+    gap: 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.item{
+    display: grid;
+    grid-template-rows: 8fr 2fr;
+}
+.card{
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    width: 90%;
+}
