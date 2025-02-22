@@ -13,11 +13,13 @@ export default function Header() {
             fontWeight : 'bold',
             textAlign : 'center'
         }}> Corner Market </h1> */}
+        <Link href="/">
         <img src="https://static.vecteezy.com/system/resources/previews/008/635/894/non_2x/market-crypto-logo-vector.jpg" alt="" style={{width : '60px', height : '60px',  marginLeft : 'calc(50% - 40px)'}}/>
+        </Link>
       </div>
       <div style={{display : 'flex', justifyContent :'flex-end', alignItems : 'center', paddingRight : '5%', color : "blue", gap: '20px'}}>
         <Link href="/home">Home</Link>
-        <Link href="/product">Products</Link>
+        <Link href="/product">Product</Link>
         <CardanoWallet></CardanoWallet>
       </div>
     </div>

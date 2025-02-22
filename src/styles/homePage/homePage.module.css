@@ -14,10 +14,36 @@
 .item{
     display: grid;
     grid-template-rows: 8fr 2fr;
+    gap:  10px;
+    height: auto;
 }
 .card{
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
     width: 90%;
+    height: 200px;
+    cursor: pointer;
+}
+.category{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-right: 1px solid #f0f0f0;
+}
+
+@media screen and (max-width: 768px){
+    .list {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .category{
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
 }

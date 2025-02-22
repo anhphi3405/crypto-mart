@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    padding: 0 10%;
+    height: 100vh;
+}
+.info i{
+    color: orange;
+}
+
+.info{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 10%;
+    gap: 10px;
+}
+.stock{
+    cursor: text;
+    height: 20px;
+    width: 90px;
+    background-color: green;
+    color: white;
+    align-items: center;
+}
+.stock i{
+    color: white;
+}
+.purchase{
+    width: 189px;
+    height: 47px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+.purchase:hover{
+    background-color: orange;
+    transition: 0.5s;
+}
