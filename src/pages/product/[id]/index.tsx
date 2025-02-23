@@ -1,6 +1,12 @@
+'use client'
 import React from 'react'
 import x from '@/styles/detail/detail.module.css'
+import { useRouter } from 'next/navigation'
 export default function Detail() {
+    const router = useRouter();
+    const purchase = () => {
+        router.push('/checkout')
+    }
   return (
     <div className={x.container}>
       <div>
@@ -44,7 +50,7 @@ export default function Detail() {
                             <div style={{display : 'flex', gap : "10px", flexWrap : "nowrap", alignItems : 'center'}}>
                                 <h3 style={{fontWeight : 'bold'}}>Quantity:</h3>
                                 <input type="number" style={{border : '1px solid black', width : "80px"}} min={1}/>
-                                <button className={x['purchase']}>Purchase</button>
+                                <button className={x['purchase']} onClick={purchase}>Purchase</button>
                             </div>
                         </div>
                     </div>
